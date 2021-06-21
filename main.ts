@@ -10,7 +10,10 @@ async function handleRequest(request: Request) {
 
   if (pathname.startsWith("/style.css")) {
     const style = new URL("style.css", import.meta.url);
-    return fetch(style);
+    const response = await fetch(style);
+    const headers = new Headers(response.headers);
+    headers.set("content-type", "text/css; charset=utf-8");
+    return new Response(response.body, { ...response, headers });
   }
 
   const data = new URL("data.txt", import.meta.url);
