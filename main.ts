@@ -3,6 +3,11 @@ import createHtml from "./createHtml.ts";
 async function handleRequest(request: Request) {
   const { pathname } = new URL(request.url);
 
+  if (pathname.startsWith("/favicon.ico")) {
+    const favicon = new URL("favicon.ico", import.meta.url);
+    return fetch(favicon);
+  }
+
   if (pathname.startsWith("/assets")) {
     const style = new URL(pathname.substr(1), import.meta.url);
     return fetch(style);
