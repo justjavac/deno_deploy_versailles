@@ -8,8 +8,8 @@ async function handleRequest(request: Request) {
     return fetch(favicon);
   }
 
-  if (pathname.startsWith("/assets")) {
-    const style = new URL(pathname.substr(1), import.meta.url);
+  if (pathname.startsWith("/style.css")) {
+    const style = new URL("style.css", import.meta.url);
     return fetch(style);
   }
 
