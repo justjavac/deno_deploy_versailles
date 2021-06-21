@@ -1,7 +1,6 @@
 # 凡尔赛语录
 
 [![ci](https://github.com/justjavac/deno_deploy_versailles/actions/workflows/ci.yml/badge.svg)](https://github.com/justjavac/deno_deploy_versailles/actions/workflows/ci.yml)
-[![license](https://img.shields.io/github/license/justjavac/deno_deploy_versailles)](https://github.com/justjavac/deno_deploy_versailles/blob/main/LICENSE)
 
 凡尔赛语录。部署在 [Deno Deploy](https://deno.com/deploy)。
 
