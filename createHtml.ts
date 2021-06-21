@@ -8,13 +8,6 @@ export default function createHtml(str: string): string {
     <title>凡尔赛</title>
     <meta name="description" content="凡尔赛：一种“以低调的方式进行炫耀”的话语模式，也称凡学。这种话语模式先抑后扬，明贬暗褒，自说自话，假装用苦恼、不开心的口吻炫耀自己">
     <meta name="keywords" content="凡尔赛,低调,炫耀">
-    <meta property="og:title" content="凡尔赛" />
-    <meta property="og:url" content="https://versailles.deno.dev" />
-    <meta property="og:image" content="https://versailles.deno.dev/assets/icon.png" />
-    <meta property="og:site_name" content="凡尔赛" />
-    <meta property="og:description" content="凡尔赛：一种“以低调的方式进行炫耀”的话语模式，也称凡学。这种话语模式先抑后扬，明贬暗褒，自说自话，假装用苦恼、不开心的口吻炫耀自己" />
-    <link rel="alternate icon" type="image/png" href="assets/icon.png">
-    <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
