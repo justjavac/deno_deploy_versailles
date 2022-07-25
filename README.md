@@ -8,16 +8,8 @@
 
 ## 本地开发
 
-1. 安装 `deployctl`:
-
 ```bash
-deno install -Afr --no-check https://deno.land/x/deploy/deployctl.ts
-```
-
-1. 启动本地开发服务器：
-
-```bash
-deployctl run --watch ./main.ts
+deno run -A --watch ./main.ts
 ```
 
 ### License
