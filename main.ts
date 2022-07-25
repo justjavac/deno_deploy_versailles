@@ -1,3 +1,4 @@
+import { serve } from "https://deno.land/std@0.149.0/http/server.ts";
 import createHtml from "./createHtml.ts";
 
 async function handleRequest(request: Request) {
@@ -31,6 +32,4 @@ async function handleRequest(request: Request) {
   });
 }
 
-addEventListener("fetch", (event: FetchEvent) => {
-  event.respondWith(handleRequest(event.request));
-});
+serve(handleRequest);
